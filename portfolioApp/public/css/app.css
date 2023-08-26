@@ -1,9 +1,7 @@
 .footer{
-    position: fixed;
+    position:static;
     bottom: 0px;
     width: -webkit-fill-available;
+    min-height: 10%;
 }
 
-.prueba{
-    height: 400px;
-}
