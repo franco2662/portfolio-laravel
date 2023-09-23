@@ -23,7 +23,7 @@
         @yield('content')
     </main>
     </body>
-    <footer class="footer pt-11 pb-3 bg-dark text-white">    
+    <footer class="footer d-flex justify-content-between align-items-center bg-dark text-white">    
         @include('layouts.footer')    
     </footer>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
