@@ -1,41 +1,142 @@
-.footer{
-    position:static;
-    bottom: 0px;
-    width:-webkit-fill-available;
-    min-height: 10vh;
+.custom-body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(55, 74, 119, 1) 31%, rgba(225, 225, 247, 1) 100%);
+  /* background-image: url(/img/fondo.jpg); */
 }
 
-.foto-container{
-    height: 800px; /* Cambia el valor a la altura deseada en píxeles o porcentaje */
-    width:100%;
-    background-color: #03031b;
+.footer {
+  position:static;
+  margin-top: auto;
+  bottom: 0;    
+  width: 100%;
+  min-height: 10vh;
 }
 
-.foto-perfil{
-    height: 100%;
-    object-fit: contain;  
-    padding-left: 5%;
-    padding-top: 2%;
+.foto-container {
+  height: 90vh;
+  /* Cambia el valor a la altura deseada en píxeles o porcentaje */
 }
 
-.carrusel-container{
-    padding:5% 1% 1% 1%;
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
+.foto-perfil {
+  margin-left: 50%;
+  height: 90vh;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.color-contenido{
+  background: rgba(225,225,247,1)
 }
 
 .pulsacion {
-    /* Establece la transición para suavizar la animación */
-    transition: transform 0.2s ease-in-out;
+  /* Establece la transición para suavizar la animación */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Aplica la animación cuando el puntero pasa por encima */
+.pulsacion:hover {
+  /* Escala la imagen ligeramente */
+  transform: scale(1.2);
+}
+
+.custom-navbar {
+  height: 10vh;
+  background: rgb(2, 0, 36);
+}
+
+.main-content {
+  margin-top: 10vh;
+  height: 100%;
+  min-height: 100%;
+}
+
+.about {
+  margin-top: 15vh;
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: 15vh;
+  }
+
+  .nav-text {
+    font-size: xx-large;
+  }
+
+  .main-content {
+    margin-top: 15vh;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .foto-perfil {
+    margin-left: 50%;
+    height: 50vh;
+    object-fit: contain;
+    justify-content: center;
+  }
+
+  .foto-container {
+    height: 40vh;
+    /* Cambia el valor a la altura deseada en píxeles o porcentaje */
+  }
+    
+}
+
+@media (max-width: 595px) {
+  .custom-navbar {
+    height: 15vh;
+  }
+
+  .nav-text {
+    font-size: xx-large;
+  }
+
+  .main-content {
+    margin-top: 15vh;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .foto-perfil {    
+    margin-left: 0%;
+    object-fit: contain;
+    justify-content: center;
+  }
+  .about {
+    margin-top: 25vh !important;
   }
   
-  /* Aplica la animación cuando el puntero pasa por encima */
-  .pulsacion:hover {
-    /* Escala la imagen ligeramente */
-    transform: scale(1.2);
+  .carrusel{
+    margin-top: 5vh !important;
   }
-  .custom-navbar{
-    height: 10vh;
+}
+
+@media (max-width: 480px) {
+  .custom-navbar {
+    height: 15vh;
   }
+
+  .nav-text {
+    font-size: xx-large;
+  }
+
+  .main-content {
+    margin-top: 15vh;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .foto-perfil {
+    margin-left: 0%;
+    object-fit: contain;
+    justify-content: center;
+  }
+  .about {
+    margin-top: 25vh !important;
+  }
+  
+  .carrusel{
+    margin-top: 5vh !important;
+  }
+}
